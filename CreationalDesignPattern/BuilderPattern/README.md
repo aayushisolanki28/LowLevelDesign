@@ -1,0 +1,4 @@
+- Problem: An object has multiple optional settings, and constructing it directly becomes difficult to read.
+- Builder: Provides readable methods to configure the object step by step.
+- build(): Produces the final object.
+- Method chaining: Returning this lets you call methods consecutively.
