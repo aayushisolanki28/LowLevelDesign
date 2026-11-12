@@ -8,4 +8,9 @@ export interface ParkingSessionRepository {
   ): Promise<ParkingSession | null>;
 
   findById(id: string): Promise<ParkingSession | null>;
+
+    completeIfActive(
+    sessionId: string,
+    checkoutTime: Date
+  ): Promise<ParkingSession | null>;
 }
